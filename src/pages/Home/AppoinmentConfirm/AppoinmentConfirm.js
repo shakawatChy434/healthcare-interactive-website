@@ -3,19 +3,18 @@ import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
-const ServiceConfirm = () => {
-    const { confirmID } = useParams()
+const AppoinmentConfirm = () => {
+    const { appoinmentID } = useParams();
     return (
-
         <div className="container">
             <div className="login-form">
                 <div className="col-12 col-sm-12 col-md-12 col-lg-6 details-cart p-5  ">
-                    <h2>Kindly Check Your Confirmation.</h2> <br />
-                    <h4 className="text-primary text-bold">Service Name :  {confirmID}</h4> <br />
-
-                    <h5>Our Working Days</h5>
-                    <p>(24/7)</p>
-
+                    <h2>Kindly Check Your Appoinment Details.</h2> <br />
+                    <h4 className="text-primary text-bold">Doctor :  {appoinmentID}</h4> <br />
+                    <h5>Check Doctors Shedule: </h5>
+                    <p>Sunday</p>
+                    <p>Monday</p>
+                    <p>Thusday</p>
                 </div>
                 <div className="col-12 col-sm-12 col-md-12 col-lg-4 details-cart p-5   ">
                     <h3>Please Complect This Form </h3>
@@ -32,7 +31,7 @@ const ServiceConfirm = () => {
                     <div>
                         <button className="mt-5  px-5 py-2 bg-primary  notFound-btn">
                             <AiOutlineArrowLeft className="me-3 " />
-                            Submit</button>
+                            Confirm</button>
                     </div>
                 </div> <br />
                 <div></div>
@@ -54,4 +53,4 @@ const ServiceConfirm = () => {
     );
 };
 
-export default ServiceConfirm;
+export default AppoinmentConfirm;

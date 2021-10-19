@@ -1,0 +1,84 @@
+/* Form part start */
+body{
+    font-family: cursive;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-input{
+    font-weight: 700;
+}
+.input-feild{
+    height: 30px; 
+    width: 350px;
+    text-align: center;
+}
+.authentiaction-form{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.authentiaction-form a{
+    text-decoration: none;
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(209, 186, 186);
+    color: #000;
+    font-weight: 600;
+}
+.auth-details{
+    margin-left: 200px;
+}
+.form-details{
+    margin-left: 200px;
+    background-color: rgb(200, 200, 235);
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.form-details:hover{
+    background-color: rgb(146, 223, 96);
+}
+/* Form part end */
+
+/* Third party css */
+.login-details{
+    /* display: flex; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.icon img{
+    height: 60px;
+    margin-right: -40px;
+}
+.icon:hover img{
+    box-shadow: black;
+    background:cyan;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+.icon-text{
+    color: blue;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 5px
+}
+.icon-heading{
+    color: rgb(33, 33, 202);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+.icon-heading:hover{
+    font-size: 50px;
+}

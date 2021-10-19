@@ -13,7 +13,7 @@ const OurDoctors = () => {
             .then(data => setDoctors(data))
     }, [])
     return (
-        <div id="doctors" className="container mb-5">
+        <div id="doctors" className="container">
             <h2 className="text-primary headding"><BiRadioCircleMarked></BiRadioCircleMarked>OUR DOCTORS<BiRadioCircleMarked></BiRadioCircleMarked></h2>
             <div className="row">
                 {

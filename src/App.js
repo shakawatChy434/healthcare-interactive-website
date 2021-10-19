@@ -10,21 +10,29 @@ import Header from './pages/Share/Header/Header';
 import NotFound from './pages/NotFound/NotFound';
 import Login from './pages/Login/Login/Login';
 import ServiceConfirm from './pages/ServiceConfirm/ServiceConfirm';
+import AuthProvider from './Context/AuthProvider';
+import PrivetRoute from './pages/Login/PrivetRoute/PrivetRoute';
+import AppoinmentConfirm from './pages/Home/AppoinmentConfirm/AppoinmentConfirm';
+import Register from './pages/Login/Register/Register';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/"><Home></Home> </Route>
-          <Route path="/home"><Home></Home> </Route>
-          <Route path="/contact"><ContactUs></ContactUs></Route>
-          <Route path="/serviceConfirm/:confirmID"><ServiceConfirm></ServiceConfirm> </Route>
-          <Route path="/login"><Login></Login> </Route>
-          <Route path="*"><NotFound></NotFound> </Route>
-        </Switch>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/"><Home></Home> </Route>
+            <Route path="/home"><Home></Home> </Route>
+            <Route path="/contact"><ContactUs></ContactUs></Route>
+            <PrivetRoute path="/serviceConfirm/:confirmID"><ServiceConfirm></ServiceConfirm> </PrivetRoute>
+            <PrivetRoute path="/appoinmentConfirm/:appoinmentID"><AppoinmentConfirm></AppoinmentConfirm> </PrivetRoute>
+            <Route path="/register"><Register></Register> </Route>
+            <Route path="/login"><Login></Login> </Route>
+            <Route path="*"><NotFound></NotFound> </Route>
+          </Switch>
+        </BrowserRouter>
+      </AuthProvider>
     </div >
   );
 }

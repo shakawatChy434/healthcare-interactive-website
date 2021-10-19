@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdLibraryAdd } from "react-icons/md";
+
 import './Service.css';
 import './Service.css'
 
@@ -12,8 +14,8 @@ const Service = (props) => {
                 <h5 className="cart-title">{name} </h5>
                 <small className="description">{description} </small>
             </div>
-            <Link to={`/serviceConfirm/${id} ${name}`}>
-                <button className="py-1 mt-4 btn-dtails"> Take Services</button>
+            <Link to={`/serviceConfirm/ ${name}`}>
+                <button className="py-1 mt-4 btn-dtails"><MdLibraryAdd /> Take Services</button>
             </Link>
         </div>
     );
