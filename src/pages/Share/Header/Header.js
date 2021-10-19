@@ -7,11 +7,9 @@ import './Header.css'
 const Header = () => {
     return (
         <>
-            <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
                 <Container>
                     <Navbar.Brand href="#home"><GiHospital className="me-2" /> Central Hospital</Navbar.Brand>
-
-
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav className="ms-auto nav-link">
