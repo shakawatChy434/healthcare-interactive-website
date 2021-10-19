@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Service.css';
 import './Service.css'
 
@@ -11,7 +12,9 @@ const Service = (props) => {
                 <h5 className="cart-title">{name} </h5>
                 <small className="description">{description} </small>
             </div>
-            <button className="py-1 mt-4 btn-dtails">Appointment</button>
+            <Link to={`/serviceConfirm/${id} ${name}`}>
+                <button className="py-1 mt-4 btn-dtails"> Take Services</button>
+            </Link>
         </div>
     );
 };

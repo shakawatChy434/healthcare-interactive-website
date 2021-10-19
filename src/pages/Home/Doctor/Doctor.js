@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Doctor.css'
 
 const Doctor = (props) => {
@@ -10,7 +11,9 @@ const Doctor = (props) => {
                 <h5 className="cart-title">{name} </h5>
                 <small className="description">{discription} </small>
 
-                <button className="py-1 mt-4 btn-dtails">Appointment</button>
+                <Link to="/login">
+                    <button className="py-1 mt-4 btn-dtails"> Appointment</button>
+                </Link>
             </div>
 
         </div>
