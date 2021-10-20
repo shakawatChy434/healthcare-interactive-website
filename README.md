@@ -1,6 +1,6 @@
 ## Central Hospital
 
-[Site Lik](https://affectionate-lichterman-4e3678.netlify.app/)
+[Firebase Live Site Link](https://central-hospital-c646d.web.app/)
  
 - Our service are good for other hospital 
 - You can easily connect with us

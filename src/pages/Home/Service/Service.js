@@ -14,7 +14,7 @@ const Service = (props) => {
                 <h5 className="cart-title">{name} </h5>
                 <small className="description">{description} </small>
             </div>
-            <Link to={`/serviceConfirm/ ${name}`}>
+            <Link to={`/service/${id}`}>
                 <button className="py-1 mt-4 btn-dtails"><MdLibraryAdd /> Take Services</button>
             </Link>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import useAuth from '../../../hooks/useAuth';
-import { FaRegSmileWink } from "react-icons/fa";
+import { FcBusinessman } from "react-icons/fc";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
 import googleIcon from '../../../images/icon/google.png'
@@ -15,8 +15,7 @@ const Login = () => {
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
 
-
-
+    
     const handlerGoogleLogin = () => {
         singInUsingGoogle()
             .then((result) => {
@@ -37,7 +36,7 @@ const Login = () => {
                         <small className="email-input"><RiLockPasswordLine /> Password</small> <br />
                         <input className="input-feild" type="password" placeholder="your password" />
                         <br /> <br />
-                        <input className="input-feild" type="submit" value="Continue" /> <br />
+                        <input className="input-feild bg-primary" type="submit" value="LogIn" /> <br />
                     </form>
                     <div className="authentiaction-form">
                         <p>New to Central Hospital?</p> <br />
@@ -47,7 +46,7 @@ const Login = () => {
                 </div>
             </div>
             <div className="col-12 col-sm-12 col-md-12 col-lg-12  p-5  ">
-                <small className="icon-heading"><FaRegSmileWink></FaRegSmileWink> Make Your Login Esaier With Us.<FaRegSmileWink></FaRegSmileWink> </small>
+                <small className="icon-heading"><FcBusinessman /> Make Your Login Esaier With Us.<FcBusinessman /></small>
                 <div className="login-details ">
                     <div className="icon me-5 ">
                         <img onClick={handlerGoogleLogin} src={googleIcon} alt="" />

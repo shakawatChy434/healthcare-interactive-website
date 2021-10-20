@@ -25,7 +25,7 @@ function App() {
             <Route exact path="/"><Home></Home> </Route>
             <Route path="/home"><Home></Home> </Route>
             <Route path="/contact"><ContactUs></ContactUs></Route>
-            <PrivetRoute path="/serviceConfirm/:confirmID"><ServiceConfirm></ServiceConfirm> </PrivetRoute>
+            <PrivetRoute path="/service/:serviceId"><ServiceConfirm></ServiceConfirm> </PrivetRoute>
             <PrivetRoute path="/appoinmentConfirm/:appoinmentID"><AppoinmentConfirm></AppoinmentConfirm> </PrivetRoute>
             <Route path="/register"><Register></Register> </Route>
             <Route path="/login"><Login></Login> </Route>
