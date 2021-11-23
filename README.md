@@ -7,3 +7,4 @@
 - We are alwayes responsible our pastient
 - You can easily ensure your appointment & get services  
 - You can save your money & time also.
+- Wish you all the best.
